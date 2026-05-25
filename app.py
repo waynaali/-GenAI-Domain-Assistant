@@ -58,11 +58,10 @@ def init_chromadb():
 def init_llm():
 
     return ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
+        model="gemini-2.5-flash",
         google_api_key=os.getenv("Gemini_API_Key"),
         temperature=0
     )
-
 
 # =========================================================
 # INITIALIZE COMPONENTS
